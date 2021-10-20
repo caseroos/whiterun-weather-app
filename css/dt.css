@@ -1,0 +1,60 @@
+body{
+  background: none;
+}
+.grid{
+  display: flex;
+}
+
+.sidebar{
+  display: none;
+}
+
+.dragon404block{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "baddragon whoops404"
+}
+
+.baddragon{
+  margin-left: 60px;
+  max-width: 500px;
+}
+
+.whoops404{
+  margin-right: 60px;
+  float: left;
+  align-self: center;
+  font-size: 42px;
+}
+
+.helgenalloveragain{
+  padding: 15px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 26px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 500px){
+.baddragon{
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 390px;
+}
+
+.dragon404block{
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "baddragon"
+  "whoops404"
+}
+.whoops404{
+  margin-left: 10px;
+}
+
+}

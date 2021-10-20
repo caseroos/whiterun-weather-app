@@ -1,0 +1,368 @@
+/* general */
+h1{
+  font-family: 'Cinzel Decorative', cursive;
+}
+h2{
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+}
+
+h3{
+  font-family: 'Cinzel', serif;
+  margin: 0px;
+}
+
+h4{
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 0px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: 0 0 0 0;
+
+  background-image: url('https://i.imgur.com/dK88WUz.jpg');
+  background-color: rgba(241, 208, 182, 0.17);
+  min-height: 800px;
+    /* Parrallax Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Header & Nav */
+.header{
+  background: rgba(230, 230, 230, 0.8);
+  padding-top: 25px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logo title lang tempchange"
+}
+
+img.logo{
+  max-width: 80px;
+  margin: : auto;
+  padding-left: 35px;
+}
+.title{
+  font-family: 'dragon_alphabetregular';
+  padding-bottom: 10px;
+}
+.tempchange{
+  padding-top: 25px;
+  text-align: center;
+}
+.lang{
+  padding-top: 25px;
+  text-align: center;
+}
+
+.navigation{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  background-color: rgba(104, 62, 27, 0.9);
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1.5fr 1.5fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". today 7day dragontracker ."
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightpink;
+}
+
+/* selected link */
+a:active {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Body */
+.grid{
+  margin: 35px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "main sidebar"
+}
+
+.main{
+  padding-right: 30px;
+}
+
+.subsections{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+
+}
+
+.tempnumbers{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 22px;
+  text-align: left;
+}
+
+/* Curent Weather Block */
+.currentweather{
+  max-width: 1020px;
+  max-height: 290px;
+  background: rgba(230, 230, 230, 0.8);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "cwleft cwright"
+}
+
+.cwleft{
+  margin: 25px;
+  border-right: 2px solid grey;
+  height: auto;
+}
+
+.cwsections{
+  align-items: center;
+
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "cwicon cwtemp"
+}
+
+.cwright{
+  font-family: 'Alegreya Sans', sans-serif;
+  align-items: center;
+  padding-left: 20px;
+
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "high low"
+  "wind rain"
+  "sunrise sunset"
+}
+
+.cwlabel
+{
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.tempnumbers{
+  font-size: 34px;
+  padding-left: 20px;
+}
+
+.smallicons{
+  max-width: 32px;
+  float: left;
+  padding-right: 15px;
+}
+
+/* Hourly Block */
+.hourly{
+  max-width: 1020px;
+  max-height: 120px;
+  background: rgba(230, 230, 230, 0.8);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+}
+.hourlytext{
+  text-align: center;
+  padding: 10px;
+  font-family: 'Alegreya Sans', sans-serif;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "hour1 hour2 hour3 hour4 hour5 hour6 hour7 hour8 hour9"
+}
+
+.hourlyicons{
+  max-width: 56px;
+  align-items: center;
+}
+
+/* Local Weather Block */
+.localweather{
+  max-width: 1020px;
+  max-height: 150px;
+  background: rgba(230, 230, 230, 0.8);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+
+  overflow: scroll;
+}
+
+.localgrid{
+  padding-left: 20px;
+  text-align: left;
+  font-family: 'Cinzel', serif;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "Honningbrew Rorikstead Riverwood"
+
+}
+
+.localdata{
+  padding: 15px;
+  font-size: 18px;
+}
+
+.localgrid2
+{
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "localicons localtemp"
+}
+
+/* Bottom Row */
+.bottom-block{
+  max-width: 1020px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "ad3 dragonblock"
+}
+.ad3{
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  max-width: 100%;
+}
+
+/* Dragon Tracker Block */
+.dragonblock{
+  max-height: 320px;
+  margin-left: auto;
+  margin-right: 0;
+  background: rgba(230, 230, 230, 0.8);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  overflow: scroll;
+
+}
+
+.dragongrid{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "dragontrackercontent dragonimage"
+
+}
+
+.dragonimage img{
+  max-width: 200px;
+  position: relative;
+  top: -40px;
+  margin-left: 5px;
+}
+
+/* Sidebar */
+.sidebar{
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ads */
+
+.adside{
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Footer */
+footer{
+  margin-top: 80px;
+  background: rgba(230, 230, 230, 0.8);
+}
+
+.footerarea{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "social"
+  "legal"
+
+}
+.socials{
+  padding-top: 25px;
+  text-align: center;
+}
+.mediaicon {
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legal{
+  padding: 45px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 940px){
+.adside{
+  max-width: 100%;
+}
+}
+
+@media only screen and (max-width: 860px){
+.sidebar{
+  display: none;
+}

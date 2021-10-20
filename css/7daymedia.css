@@ -1,0 +1,48 @@
+@media only screen and (max-width: 500px){
+
+/* Snap X Scroll */
+
+
+.weeklygrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
+  max-width: 400px;
+
+}
+
+.day2{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.container {
+  align-self: stretch;
+  display: flex;
+  overflow: auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+}
+
+.container.x {
+  flex-flow: row nowrap;
+}
+
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.container > div {
+  scroll-snap-align: center;
+  text-align: center;
+  flex: none;
+}
+
+.x.container > div {
+  width: 65%;
+}
+
+
+}

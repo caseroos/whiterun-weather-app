@@ -1,0 +1,133 @@
+/* Defining the Space */
+.weeklygrid{
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "uppergrid"
+  "lowergrid"
+}
+
+.uppergrid{
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "day1 day2 day3"
+}
+
+.lowergrid{
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "day4 day5 day6 day7"
+}
+
+.toprow{
+  margin: 10px;
+  width: 270px;
+  height: 440px;
+
+  background: rgba(230, 230, 230, 0.8);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+}
+.bottomrow{
+  margin: 10px;
+  width: auto;
+  height: 390px;
+
+  background: rgba(230, 230, 230, 0.8);
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+}
+/* The Blocks */
+.weekdata{
+  padding: 15px;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: .3fr 1fr .3fr .5fr .2fr;
+  grid-template-areas:
+  "weekdayname"
+  "weekicons"
+  "temps"
+  "wordoftheday"
+  "extradata"
+}
+
+.weekdayname{
+  max-height: 80px;
+  margin-bottom: 1px;
+}
+
+.weekicons{
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.temps{
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "high low"
+}
+
+.high{
+  font-size: 36px;
+  text-align: right;
+  float: right;
+}
+
+.low{
+  font-size: 28px;
+  text-align: left;
+  color: grey;
+  float: left;
+}
+
+.extradata{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 25px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "rainchance dragonchance"
+}
+
+.extraicons{
+  padding-top: 20px;
+  max-width: 50px;
+}
+
+.wordoftheday{
+  font-family:'dragon_alphabet';
+}
+
+/* BottomRow Adjust */
+.lowergrid .weekicons{
+  max-width: 80px;
+}
+
+.lowergrid .extraicons{
+  padding-top: 10px;
+  max-width: 40px;
+}
+
+.lowergrid .extradata{
+  font-size: 18px;
+}
