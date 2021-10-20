@@ -115,7 +115,14 @@
 }
 
 .wordoftheday{
-  font-family:'dragon_alphabet';
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+.thuum{
+  font-family: 'Cinzel', serif;
+  font-style: italic;
+  margin-bottom: 0px;
 }
 
 /* BottomRow Adjust */
